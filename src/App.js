@@ -36,9 +36,9 @@ class App extends React.Component {
     return(<div className="App">
       <h1>CV App</h1>
       {/* Form area */}
-      <General field="Name" onSub={this.onSubmit.bind(this)} editMode={this.state.editMode} toggleEdit={this.toggleEdit.bind(this)}/>
-      <General field="Email" onSub={this.onSubmit.bind(this)} editMode={this.state.editMode} toggleEdit={this.toggleEdit.bind(this)}/>
-      <General field="Phone" onSub={this.onSubmit.bind(this)} editMode={this.state.editMode} toggleEdit={this.toggleEdit.bind(this)}/>
+      <General field="Name" onSub={this.onSubmit.bind(this)} />
+      <General field="Email" onSub={this.onSubmit.bind(this)} />
+      <General field="Phone" onSub={this.onSubmit.bind(this)} />
       {/* Live CV preview */}
       <hr></hr>
       <h1>CV Preview:</h1><hr></hr>
