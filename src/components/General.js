@@ -8,7 +8,7 @@ class General extends React.Component{
             return(
                 <div>
                     <form onSubmit={this.props.onSub}>
-                    <label>{this.props.field}</label>
+                    <label>{this.props.field} </label>
                     <input type='text'></input>                    
                     <button type='submit'><i class="fa-solid fa-plus"></i></button>                    
                     </form>  
