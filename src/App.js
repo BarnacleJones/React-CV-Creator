@@ -76,21 +76,26 @@ class App extends React.Component {
 
   addMoreEducation()
   {
-
+    //how.......
   }
 
   render()
   {return(
   <div className="App">      
       <div className='input_section'>
-        <h1>CV App</h1>{/* Form area */}  
+        <h1>.CV</h1>{/* Form area */}  
         <hr></hr>   
         <h2>General information:</h2>         
-        <General field="Name" onSub={this.onSubmit.bind(this)} editMode={this.state.name[1]} name={this.state.name[0]} />
-        <General field="Email" onSub={this.onSubmit.bind(this)} editMode={this.state.email[1]} name={this.state.email[0]}/>
-        <General field="Phone" onSub={this.onSubmit.bind(this)} editMode={this.state.phone[1]} name={this.state.phone[0]}/>
-        <General field="LinkedIn" onSub={this.onSubmit.bind(this)} editMode={this.state.linkedin[1]} name={this.state.linkedin[0]}/>
-        <General field="Github" onSub={this.onSubmit.bind(this)} editMode={this.state.github[1]} name={this.state.github[0]}/>
+        <General field="Name" onSub={this.onSubmit.bind(this)} 
+        editMode={this.state.name[1]} name={this.state.name[0]} />
+        <General field="Email" onSub={this.onSubmit.bind(this)} 
+        editMode={this.state.email[1]} name={this.state.email[0]}/>
+        <General field="Phone" onSub={this.onSubmit.bind(this)} 
+        editMode={this.state.phone[1]} name={this.state.phone[0]}/>
+        <General field="LinkedIn" onSub={this.onSubmit.bind(this)} 
+        editMode={this.state.linkedin[1]} name={this.state.linkedin[0]}/>
+        <General field="Github" onSub={this.onSubmit.bind(this)} 
+        editMode={this.state.github[1]} name={this.state.github[0]}/>
         <hr></hr>
         <h2>Education:</h2>
         <Education field1="School" 
@@ -118,19 +123,20 @@ class App extends React.Component {
         position={this.state.work[2]}
         description={this.state.work[3]}
         date={this.state.work[4]}
-        addMore={this.addMoreEducation.bind(this)}/>
-        <hr></hr>
-        <h1>CV Preview:</h1><hr></hr>      
+        addMore={this.addMoreEducation.bind(this)}/>    
       </div>
-      <div className="cv_section"> {/* Live CV preview */}       
-        <img src={require('./images/cat.png')} className="cat_image" alt='Derpy looking cat with his tounge out'></img>
+      
+      <div className="cv_section"> 
+      {/* Live CV preview */}       
+        {/* <img src={require('./images/cat.png')} className="cat_image" alt='Derpy looking cat with his tounge out'></img> */}
         <div className='general_section'>
           <h2 className='general_name'><em>{this.state.name}</em></h2>
           <p>Email: {this.state.email}</p>
           <p>Phone: {this.state.phone}</p>
           <p>LinkedIn: {this.state.linkedin}</p>
-          <p>Github: {this.state.github}</p>
+          <p>Github: {this.state.github}</p>          
         </div>
+        
         <div className="education_section_header">
           <h2>Education</h2>
             <div className='education_section_content'>
