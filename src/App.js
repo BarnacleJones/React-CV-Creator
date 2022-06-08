@@ -83,7 +83,7 @@ class App extends React.Component {
   {return(
   <div className="App">      
       <div className='input_section'>
-        <h1>.CV</h1>{/* Form area */}  
+        <h1>CV Builder</h1>{/* Form area */}  
         <hr></hr>   
         <h2>General information:</h2>         
         <General field="Name" onSub={this.onSubmit.bind(this)} 
