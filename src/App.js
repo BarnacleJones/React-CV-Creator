@@ -18,9 +18,6 @@ class App extends React.Component {
         github: ['https://github.com/BarnacleJones', true], 
         // education array [0=school 1=editmode, 2=qual, 3=date] 
         education: ['Toi Ohomai Institute of Technology', true, 'NZ Diploma in Software Development (Level 6)', '07/07/2023']  ,
-        // education2: ['', true, '', ''] ,
-        // education3: ['', true, '', ''] ,
-        // education4: ['', true, '', ''] 
         //work experience array [0=company 1=editMode 2=position 3=description 4=dates]
         work: ['Harvard University', true, 'Professor of Artificial Intelligence', 'Helping out and generally being a good employee on my best behaviour.', '07/07/2023']
       } 
@@ -52,6 +49,7 @@ class App extends React.Component {
     let school = e.target.children[1].value;
     let qual = e.target.children[3].value;
     let date = e.target.children[5].value;
+    //toggle between edit/form
     if(this.state.education[1])
     {
       this.setState({education: [school, false, qual, date]})
@@ -59,6 +57,7 @@ class App extends React.Component {
     else{this.setState({education: [school, true, qual, date]})}    
   }
 
+  //submitting work exp function
   workSubmit(e)
   {
     e.preventDefault(); 
@@ -74,6 +73,7 @@ class App extends React.Component {
     else{this.setState({work: [company, true, position,description, dates]})}    
   }
 
+  //further improvements...how to add additional education and work???
   addMoreEducation()
   {
     //how.......
@@ -83,7 +83,8 @@ class App extends React.Component {
   {return(
   <div className="App">      
       <div className='input_section'>
-        <h1>CV Builder</h1>{/* Form area */}  
+        <h1>CV Builder</h1>
+        {/* Form area */}  
         <hr></hr>   
         <h2>General information:</h2>         
         <General field="Name" onSub={this.onSubmit.bind(this)} 
@@ -111,8 +112,6 @@ class App extends React.Component {
         <hr></hr>
         <br></br>
         <h2>Work experience:</h2>
-        {//work experience array [0=company 1=editMode 2=position 3=description 4=dates]
-        }
         <WorkExperience 
         field1="Company" 
         field2="Position" 
@@ -128,13 +127,15 @@ class App extends React.Component {
       
       <div className="cv_section"> 
       {/* Live CV preview */}       
-        {/* <img src={require('./images/cat.png')} className="cat_image" alt='Derpy looking cat with his tounge out'></img> */}
         <div className='general_section'>
-          <h2 className='general_name'><em>{this.state.name}</em></h2>
-          <p>Email: {this.state.email}</p>
-          <p>Phone: {this.state.phone}</p>
-          <p>LinkedIn: {this.state.linkedin}</p>
-          <p>Github: {this.state.github}</p>          
+          <div  className='general_name'>
+          <h2><em>{this.state.name}</em></h2>
+          <hr className='name_hr'></hr>
+          </div>
+          <p><i className="fa-solid fa-envelope"></i> {this.state.email}</p>
+          <p><i className="fa-solid fa-phone"></i> {this.state.phone}</p>
+          <p><i className="fa-brands fa-linkedin"></i> {this.state.linkedin}</p>
+          <p><i className="fa-brands fa-github"></i> {this.state.github}</p>          
         </div>
         
         <div className="education_section_header">
