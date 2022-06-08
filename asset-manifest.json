@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-CV-Creator/static/css/main.b6eda2c5.css",
-    "main.js": "/React-CV-Creator/static/js/main.ab2ff869.js",
+    "main.css": "/React-CV-Creator/static/css/main.db61511b.css",
+    "main.js": "/React-CV-Creator/static/js/main.303faac4.js",
     "static/js/787.34a20539.chunk.js": "/React-CV-Creator/static/js/787.34a20539.chunk.js",
-    "static/media/cat.png": "/React-CV-Creator/static/media/cat.fe96e40400fa339f9a94.png",
+    "static/media/office.jpg": "/React-CV-Creator/static/media/office.92030c9ce8f3d1010e1e.jpg",
     "index.html": "/React-CV-Creator/index.html",
-    "main.b6eda2c5.css.map": "/React-CV-Creator/static/css/main.b6eda2c5.css.map",
-    "main.ab2ff869.js.map": "/React-CV-Creator/static/js/main.ab2ff869.js.map",
+    "main.db61511b.css.map": "/React-CV-Creator/static/css/main.db61511b.css.map",
+    "main.303faac4.js.map": "/React-CV-Creator/static/js/main.303faac4.js.map",
     "787.34a20539.chunk.js.map": "/React-CV-Creator/static/js/787.34a20539.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6eda2c5.css",
-    "static/js/main.ab2ff869.js"
+    "static/css/main.db61511b.css",
+    "static/js/main.303faac4.js"
   ]
 }
