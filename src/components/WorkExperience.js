@@ -24,8 +24,7 @@ class WorkExperience extends React.Component{
             )
             }
             else{                
-                return(
-                    
+                return(                    
                     <div>
                     <form onSubmit={this.props.onSub}>
                     <label>{this.props.field1}:{this.props.company}</label>

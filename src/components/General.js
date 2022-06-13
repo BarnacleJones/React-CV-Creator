@@ -27,8 +27,8 @@ class General extends React.Component{
                     </div>
                 )
             }                
-    }
+    
      
-}
+}}
 
 export default General;
