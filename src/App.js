@@ -10,7 +10,10 @@ class App extends React.Component {
     //inherits all properties of react.component?
     super();
     //set properties of state
+
+    
     this.state = {
+      tester:true,
         name: ['Barnacle Jones', true],
         email: ['benmjones@protonmail.com', true],
         phone: ['+641111111111', true],
